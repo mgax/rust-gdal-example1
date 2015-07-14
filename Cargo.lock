@@ -1,0 +1,32 @@
+[root]
+name = "rust-example1"
+version = "0.1.0"
+dependencies = [
+ "gdal 0.1.0 (git+https://github.com/georust/rust-gdal.git)",
+ "geo 0.0.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gdal"
+version = "0.1.0"
+source = "git+https://github.com/georust/rust-gdal.git#b5dfd249928222ad47ba42de00dea043b4fa66b6"
+dependencies = [
+ "geo 0.0.4 (git+https://github.com/georust/rust-geo.git?rev=b3f2f81)",
+ "libc 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "geo"
+version = "0.0.4"
+source = "git+https://github.com/georust/rust-geo.git?rev=b3f2f81#b3f2f81d43af18f5298205d0c036d9e6c8f01039"
+
+[[package]]
+name = "geo"
+version = "0.0.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.1.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

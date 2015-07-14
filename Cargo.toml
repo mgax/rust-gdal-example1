@@ -1,0 +1,10 @@
+[package]
+name = "rust-example1"
+version = "0.1.0"
+authors = ["Alex Morega <alex@grep.ro>"]
+
+[dependencies.geo]
+geo = "https://github.com/georust/rust-geo.git"
+
+[dependencies.gdal]
+git = "https://github.com/georust/rust-gdal.git"
