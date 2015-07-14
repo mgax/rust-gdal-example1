@@ -9,7 +9,7 @@ dependencies = [
 [[package]]
 name = "gdal"
 version = "0.1.0"
-source = "git+https://github.com/georust/rust-gdal.git#b5dfd249928222ad47ba42de00dea043b4fa66b6"
+source = "git+https://github.com/georust/rust-gdal.git#c2ab579c6f420c914636f2bae77a147186d55613"
 dependencies = [
  "geo 0.0.4 (git+https://github.com/georust/rust-geo.git?rev=b3f2f81)",
  "libc 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
