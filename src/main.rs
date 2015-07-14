@@ -24,13 +24,13 @@ fn extent(g: Geometry) -> Geometry {
     let points = points(g);
     let (x0, x1) = min_max(points.iter().map(|&Point(c)| c.x).collect());
     let (y0, y1) = min_max(points.iter().map(|&Point(c)| c.y).collect());
-    let extent = LineString(vec!(
+    let extent = LineString(vec![
         Point(Coordinate{x: x0, y: y0}),
         Point(Coordinate{x: x1, y: y0}),
         Point(Coordinate{x: x1, y: y1}),
         Point(Coordinate{x: x0, y: y1}),
         Point(Coordinate{x: x0, y: y0}),
-    ));
+    ]);
     return Geometry::Polygon(Polygon(extent, vec!()));
 }
 
